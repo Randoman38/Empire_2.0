@@ -12,7 +12,7 @@ Changes:
 *Colony placement isn't only randomized.
 
 Additions:
-+GUI
+/n+GUI
   +Options/ Information Menu
 +Simulation can be paused
 +Colonies can be placed by left-click, color changed by right-click
