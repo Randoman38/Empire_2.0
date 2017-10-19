@@ -30,3 +30,5 @@ Additions:
 
 This was an exercise of my coding ability (Although, I will probably continue to make changes on my own).
 Thank you to Hopson (Should he ever see this) for inspiring me to make this.
+
+You can download it here: https://randoman38.itch.io/empire-2-0
