@@ -30,7 +30,7 @@ public class ColonyMain {
 	
 	public void tick(){
 		if(Component.com.game.paused){
-			if(Component.com.ms.released && !Component.com.ms.pressBut){
+			if((Component.com.ms.released || Component.com.ms.held) && !Component.com.ms.pressBut){
 				int[] xy = Component.com.ms.getXY();
 				xy[0] = (int) Math.floor(xy[0] / SCALE);
 				xy[1] = (int) Math.floor(xy[1] / SCALE);
