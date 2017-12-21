@@ -7,6 +7,7 @@ Part 2: https://www.youtube.com/watch?v=t73z0fzxMlE&t=308s
 I made a few changes to the original, and some additions.
 
 Changes:
+
 *Instead of importing world files as images, the world is randomly generated.
 *You don't see a list of each colony's average strength and population.
 *Colony placement isn't only randomized.
