@@ -42,14 +42,26 @@ public class Cursor extends Point implements MouseListener{
 	public void mouseReleased(MouseEvent e) {
 		int button = e.getButton();
 		
+		if(Component.com.game.esc.failopen){
+			Component.com.game.esc.failopen = false;
+		}
+		
 		if(button == MouseEvent.BUTTON1){
 			held = false;
 			released = true;
 		}else if(button == MouseEvent.BUTTON3){
-			Component.com.game.map.cm.colIndex++;
-			
-			if(Component.com.game.map.cm.colIndex >= Component.com.game.map.cm.colonies.length){
-				Component.com.game.map.cm.colIndex = 0;
+			if(!Component.com.game.edit){
+				Component.com.game.map.cm.colIndex++;
+				
+				if(Component.com.game.map.cm.colIndex >= Component.com.game.map.cm.colonies.length){
+					Component.com.game.map.cm.colIndex = 0;
+				}
+			}else{
+				Component.com.game.map.biomeIndex++;
+				
+				if(Component.com.game.map.biomeIndex >= Component.com.game.map.biomesComp.length){
+					Component.com.game.map.biomeIndex = 0;
+				}
 			}
 		}
 	}
