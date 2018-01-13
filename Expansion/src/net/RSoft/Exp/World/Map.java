@@ -364,7 +364,6 @@ public class Map {
 			
 			Biome[] tempmaparr = new Biome[temparr.size()-3];
 			for(int i=3;i<temparr.size();i++){
-				System.out.println(Integer.parseInt(temparr.get(i)));
 				tempmaparr[i-3] = biomesComp[Integer.parseInt(temparr.get(i))];
 			}
 			
